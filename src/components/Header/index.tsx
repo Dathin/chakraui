@@ -6,7 +6,7 @@ export function Header() {
   const {backUrl} = useHeaderContext();
 
   return (
-    <Flex justify="center" w="100vw" bgColor="#f5f8fa">
+    <Flex justify="center" w="100vw" bgColor="white.100">
       <Flex justify={backUrl ? 'space-between' : 'center'} p="3" maxW="90%" w="100%" >
         {backUrl && (
           <Center>
