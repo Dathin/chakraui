@@ -1,9 +1,9 @@
 export function Airplane() {
   return (
     <svg
-      width="431"
-      height="293"
-      viewBox="0 0 431 293"
+      width="417"
+      height="270.04"
+      viewBox="0 0 417 270.04"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
