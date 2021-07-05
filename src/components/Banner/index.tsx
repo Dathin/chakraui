@@ -1,16 +1,11 @@
 import {Box, Center, Flex, Heading, Icon, Text, useBreakpointValue} from '@chakra-ui/react'
+import { useIsSize } from '../../hooks/useIsSize';
 import { Airplane } from '../Airplane'
 
 //Fazer o avião sair do coiso
 export function Banner(){
 
-    // const isMediumScreen = useBreakpointValue({
-    //     md: true,
-    // });
-
-    // const isLargeScreen = useBreakpointValue({
-    //     lg: true,
-    // });
+    const {isLarge} = useIsSize();
 
     return (
         <Box backgroundImage="./bannerbackfround.png" w="100%"  backgroundRepeat="no-repeat" backgroundSize="cover" color="white.100" px={4} pt={25} pb={19}>
@@ -21,7 +16,7 @@ export function Banner(){
                     <Text fontSize={14} lineHeight="21px">Chegou a hora de tirar do papel a viagem que você sempre sonhou.</Text>
                 </Box>
             </Center>
-            {false && <Box transform="rotate(6deg)">
+            {isLarge && <Box transform="rotate(6deg)">
                 <Icon as={Airplane} />
             </Box>}
 
