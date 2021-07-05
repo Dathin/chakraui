@@ -2,13 +2,14 @@ import {Box, Center, Flex, Heading, Icon, Text, useBreakpointValue} from '@chakr
 import { useIsSize } from '../../hooks/useIsSize';
 import { Airplane } from '../Airplane'
 
-//Fazer o avião sair do coiso
 export function Banner(){
 
     const {isLarge} = useIsSize();
 
+    ["28", "56", "0", "0"]
+
     return (
-        <Box backgroundImage="./bannerbackfround.png" w="100%"  backgroundRepeat="no-repeat" backgroundSize="cover" color="white.100" px={4} pt={25} pb={19}>
+        <Box backgroundImage="./bannerbackfround.png" w="100%"  backgroundRepeat="no-repeat" backgroundSize="cover" color="white.100" px={4} py={["28px", "56px", "100px", "0", "0"]}>
             <Flex justify={["center", "center", "space-between"]} w="100%" flexWrap={["wrap", "wrap", "nowrap"]}>    
             <Center>
                 <Box>
