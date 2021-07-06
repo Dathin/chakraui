@@ -8,6 +8,9 @@ const fonts = {
 const colors = {
   white: {
     100: '#F5F8FA'
+  },
+  gray: {
+    200: '#47585B'
   }
 }
 
