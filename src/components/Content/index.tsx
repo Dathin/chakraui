@@ -1,9 +1,10 @@
-import { Divider, Flex, Heading, SimpleGrid } from "@chakra-ui/react";
+import { Divider, Flex, Heading } from "@chakra-ui/react";
 import React from "react";
 import { Topic } from "../Topic";
 
 export function Content() {
   return (
+    <>
     <Flex width="100%" justifyContent="center">
       <Flex wrap="wrap" w="75%" justifyContent="center">
         <Topic width="50%" topicName="vida noturna" />
@@ -17,5 +18,6 @@ export function Content() {
         <Heading textAlign="center" pt={9} as="h2" fontStyle="normal" fontWeight="500" fontSize="20px" lineHeight="30px" color="gray.200">Vamos nessa?<br /> Então escolha seu continente</Heading>
       </Flex>
     </Flex>
+    </>
   );
 }
