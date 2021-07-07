@@ -11,8 +11,19 @@ const colors = {
   },
   gray: {
     200: '#47585B'
+  },
+  yellow: {
+    900: '#FFBA08'
   }
 }
 
-const theme = extendTheme({fonts, colors})
+const styles = {
+  global: {
+    "body": {
+      "background": "white.100"
+    }
+  }
+}
+
+const theme = extendTheme({fonts, colors, styles})
 export default theme
