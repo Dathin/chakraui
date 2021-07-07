@@ -5,10 +5,9 @@ import { YellowElipse } from "../YellowElipse";
 interface TopicProps {
   topicName: string;
   icon?: ElementType;
-  width?: string;
 }
 
-export function Topic({ topicName, icon, width }: TopicProps) {
+export function Topic({ topicName, icon }: TopicProps) {
     const headingElement = <Heading
     as="h3"
     color="gray.200"
@@ -21,12 +20,12 @@ export function Topic({ topicName, icon, width }: TopicProps) {
   </Heading>
 
   return icon ? (
-    <VStack pt={9} justifyContent="left" w={width && width}>
+    <VStack pt={5}>
       <YellowElipse />
       {headingElement}
     </VStack>
   ) : (
-    <Center pt={9} justifyContent="left" w={width && width}>
+    <Center pt={5}>
       <YellowElipse />
       {headingElement}
     </Center>

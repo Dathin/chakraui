@@ -4,20 +4,34 @@ import { Topic } from "../Topic";
 
 export function Content() {
   return (
-    <>
-    <Flex width="100%" justifyContent="center">
-      <Flex wrap="wrap" w="75%" justifyContent="center">
-        <Topic width="50%" topicName="vida noturna" />
-        <Topic width="50%" topicName="praia" />
-        <Topic width="50%" topicName="moderno" />
-        <Topic width="50%" topicName="clássico" />
-        <Topic width="50%" topicName="e mais..." />
-        <Flex width="75%" justifyContent="center">
-          <Divider pt={9} w="25%" />
+    <Flex w="100%" justifyContent="center" flexWrap="wrap" pt={6}>
+      <Flex w="75%" justifyContent="center" flexWrap="wrap">
+        <Flex w="100%" justifyContent="space-between">
+          <Topic topicName="vida noturna" />
+          <Topic topicName="praia" />
         </Flex>
-        <Heading textAlign="center" pt={9} as="h2" fontStyle="normal" fontWeight="500" fontSize="20px" lineHeight="30px" color="gray.200">Vamos nessa?<br /> Então escolha seu continente</Heading>
+        <Flex w="100%" justifyContent="space-between">
+          <Topic topicName="moderno" />
+          <Topic topicName="clássico" />
+        </Flex>
+        <Flex w="100%" justifyContent="center">
+          <Topic topicName="e mais..." />
+        </Flex>
+        <Divider pt={7} w="16%" />
       </Flex>
+      <Heading
+          textAlign="center"
+          pt={7}
+          as="h2"
+          fontStyle="normal"
+          fontWeight="500"
+          fontSize="20px"
+          lineHeight="30px"
+          color="gray.200"
+        >
+          Vamos nessa?
+          <br /> Então escolha seu continente
+        </Heading>
     </Flex>
-    </>
   );
 }

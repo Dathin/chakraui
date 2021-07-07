@@ -13,7 +13,7 @@ SwiperCore.use([Navigation, Pagination]);
 
 export function Contnent() {
   return (
-    <Box pt={3} sx={{ "--swiper-theme-color": "#FFBA08" }}>
+    <Box pt={6} sx={{ "--swiper-theme-color": "#FFBA08" }}>
       <Swiper
         spaceBetween={2}
         slidesPerView={1}
