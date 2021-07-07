@@ -6,8 +6,6 @@ export function Banner(){
 
     const {isLarge} = useIsSize();
 
-    ["28", "56", "0", "0"]
-
     return (
         <Box backgroundImage="./bannerbackfround.png" w="100%"  backgroundRepeat="no-repeat" backgroundSize="cover" color="white.100" px={4} py={["28px", "56px", "100px", "0", "0"]}>
             <Flex justify={["center", "center", "space-between"]} w="100%" flexWrap={["wrap", "wrap", "nowrap"]}>    
