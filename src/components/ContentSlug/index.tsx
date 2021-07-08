@@ -4,7 +4,7 @@ import React from "react";
 interface ContentSlugProps {
     backgroundImageUrl: string;
     heading: string;
-    text: string;
+    text?: string;
 }
 
 export function ContnentSlug({ backgroundImageUrl, heading, text }: ContentSlugProps){

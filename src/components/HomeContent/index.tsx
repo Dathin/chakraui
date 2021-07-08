@@ -2,7 +2,7 @@ import { Divider, Flex, Heading } from "@chakra-ui/react";
 import React from "react";
 import { Topic } from "../Topic";
 
-export function Content() {
+export function HomeContent() {
   return (
     <Flex w="100%" justifyContent="center" flexWrap="wrap" pt={6}>
       <Flex w="75%" justifyContent="center" flexWrap="wrap">
