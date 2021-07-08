@@ -9,7 +9,7 @@ interface ContentSlugProps {
 
 export function ContnentSlug({ backgroundImageUrl, heading, text }: ContentSlugProps){
     return (
-        <Stack justifyContent="center" alignItems="center" color="white.100"
+        <Stack textShadow="1px 1px #47585B" justifyContent="center" alignItems="center" color="white.100"
             w="100%"
             h="250"
             backgroundImage={backgroundImageUrl}
